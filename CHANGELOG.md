@@ -15,3 +15,7 @@
   - Search for items by name.
 
 
+## Version 1.2
+- 2024-10-17
+- Changed the inventory from a set to a dictinary
+- 

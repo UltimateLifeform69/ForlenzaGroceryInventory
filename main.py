@@ -10,6 +10,7 @@ def add_item(inventory, name, price, quantity):
     """
     inventory[name] = {"price": price, "quantity": quantity}
     print(f"{name} added to the inventory.")
+    
 
 def remove_item(inventory, item_name):
     """
@@ -50,10 +51,10 @@ def display_inventory(inventory):
             print(f"{name}: Price: ${item['price']:.2f}, Quantity: {item['quantity']}")
 
 # Initialize inventory with two example items
-inventory = {
+inventory = dict({
     "apple": {"price": 0.50, "quantity": 100},
     "banana": {"price": 0.75, "quantity": 150}
-}
+})
 
 while True:
     print("\n1. Add item\n2. Remove item\n3. Update quantity\n4. Display inventory\n5. Exit")
